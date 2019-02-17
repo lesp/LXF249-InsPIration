@@ -3,14 +3,11 @@ from random import choice
 import webbrowser
 import easygui as eg
 
-
-#print("Tell me three things that you would like in a project")
 eg.msgbox(msg="Tell me what you would like in a project and I shall search Google for you. This will trigger 3 pop up windows", title="InPIration", ok_button="Inspire Me!")
 things = []
 suggestion = []
 
 for i in range(3):
-    #things.append(input("READY >>> "))
     things.append(eg.enterbox(msg="READY >>> "))
 
 inspiration = str(things[0]+" "+things[1]+" "+things[2])
