@@ -18,7 +18,7 @@ for item in search(inspiration, tld="co.uk", num=3, stop=1, pause=2):
     suggestion.append(item)
 
 for i in range(len(suggestion)):
-    links = "\n".join(suggestion[1:])
+    links = "\n".join(suggestion[0:])
     
 eg.textbox(msg="Hey I found these that might be of interest, I'll open one at random after you close this message", text=links)
     
